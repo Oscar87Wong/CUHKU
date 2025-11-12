@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhealth - Proactive Digital Wellness</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and overall body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f9;
+        }
+        /* Mobile adjustment for better spacing */
+        @media (max-width: 639px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10 min-h-screen flex flex-col items-center">
+
+    <!-- Header Section --><header class="text-center mb-12 w-full max-w-4xl">
+        <h1 class="4xl md:text-5xl font-extrabold text-[#4a90e2] mb-3">
+            Xhealth
+        </h1>
+        <p class="text-lg text-gray-600 mb-6">
+            Proactive protection for the digital generation.
+        </p>
+        <a href="#" 
+           class="inline-block py-3 px-8 bg-[#ff6b6b] text-white font-bold 
+                  rounded-xl shadow-lg hover:bg-[#ff5252] transition duration-300 transform hover:scale-105">
+            Sign In
+        </a>
+    </header>
+
+    <!-- New: ATTENTION LEVEL QUICK CHECK --><div class="w-full max-w-4xl text-center mb-10">
+        <div class="inline-flex items-center p-4 rounded-xl bg-red-50 border-2 border-red-300 shadow-lg">
+            <!-- Icon (Exclamation Triangle) --><svg class="w-6 h-6 text-red-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.3 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <span class="text-lg font-semibold text-gray-700 mr-2">Attention Level:</span>
+            <span class="2xl font-extrabold text-red-600 tracking-wider">HIGH</span>
+        </div>
+        <p class="text-sm text-red-500 mt-2 font-medium">
+            *User requires immediate attention based on recent trend analysis.*
+        </p>
+    </div>
+    
+    <!-- Features Section with Images --><section class="w-full max-w-5xl">
+        <div class="feature-grid grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            
+            <!-- Feature 1: Health Index (Updated Text) --><div class="feature bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Health Index</h3>
+                
+                <!-- Image with the provided URL --><img src="https://media.licdn.com/dms/image/v2/D5612AQFsl2ZyYYh44A/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1691072429366?e=2147483647&v=beta&t=DLoRMpQ3L4iJNIMBGsr7TGyycwcHOt9ID3-Tlf88pbI" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/400x250/06B6D4/FFFFFF?text=Health+Index+Image+Fallback'"
+                     class="w-full h-auto rounded-lg mb-4 object-cover border border-gray-100" 
+                     alt="Mockup of the Xhealth Dashboard showing the Health Index.">
+                
+                <p class="text-gray-600 text-center flex-grow">
+                    Show Health Index score
+                </p>
+            </div>
+
+            <!-- Feature 2: The Trend (Updated Text) -->
+            <div class="feature bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">The Trend</h3>
+                
+                <!-- SVG: A simple red line graph showing a sharp decrease, illustrating the warning. -->
+                <svg viewBox="0 0 300 200" class="w-full h-auto max-h-[250px] mb-4" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                    <!-- Background Grid -->
+                    <rect x="0" y="0" width="300" height="200" fill="#F9F9F9" rx="8" ry="8"/>
+                    <line x1="20" y1="180" x2="280" y2="180" stroke="#CCCCCC" stroke-width="2"/>
+                    <line x1="20" y1="20" x2="20" y2="180" stroke="#CCCCCC" stroke-width="2"/>
+
+                    <!-- Data Line (Sharp Downward Trend) -->
+                    <polyline points="
+                        20,160  
+                        80,140
+                        140,100
+                        200,120 
+                        260,50 
+                    " fill="none" stroke="#EF4444" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+
+                    <!-- Downward Arrow at the end -->
+                    <path d="M 260 50 L 275 65 L 245 65 Z" fill="#EF4444"/>
+                    
+                    <!-- Caption -->
+                    <text x="150" y="195" text-anchor="middle" font-size="12" fill="#9CA3AF">Recent Downturn</text>
+                </svg>
+                
+                <p class="text-gray-600 text-center flex-grow">
+                    Shows health index trend vary with day
+                </p>
+            </div>
+
+            <!-- Feature 3: The Suggestion (Updated Text) -->
+            <div class="feature bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">The Suggestion</h3>
+                
+                <!-- Image with the new provided URL -->
+                <img src="https://www.kikodo.io/media/images/tutorials/2020/11/19/list.png"
+                     onerror="this.onerror=null;this.src='https://placehold.co/400x250/FF6B6B/FFFFFF?text=Suggestion+List+Fallback'"
+                     class="w-full h-auto rounded-lg mb-4 object-cover border border-gray-100" 
+                     alt="Real-time intervention suggestion list graphic.">
+                
+                <p class="text-gray-600 text-center flex-grow">
+                    Provide suggestions and identifying the stimulus of the illness
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
